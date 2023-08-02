@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D0 Logistics</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+      <header>
+        <h1 class="logo1">SOLUÇÕES <br> ESTRATÉGICAS </h1>
+        <h1 class="logo2"> SOB MEDIDA</h1>
+        <img src="assets/D0Branco.webp" alt="logoD0">
+      </header>
+
+   
+        <div class="container">
+            <form class="login-form">
+              <h1>Login</h1>
+              <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+              </div>
+              <button type="submit">Entrar</button>
+              <a href="senha.html" >Esqueci a senha</a>
+              <div id="error-message"></div>
+            </form>
+          </div>
+   
+          <div id="chat-container">
+            <button id="send-button" onclick="abrirchat()">Posso Ajudar?</button>
+          </div>
+    <footer>
+        <h3>© 2023 Todos os direitos reservados</h3>
+    </footer>
+    <script >
+       // Selecionando o elemento para exibir a mensagem de erro
+  const errorMessage = document.getElementById("error-message");
+
+// Selecionando o formulário de login
+const loginForm = document.querySelector(".login-form");
+
+// Corrigindo o seletor para o link "Esqueci a senha"
+const forgotPasswordLink = document.querySelector("a[href='senha.html']");
+
+forgotPasswordLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  // Lógica para lidar com o clique no link "Esqueci a senha" aqui
+});
+
+loginForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let emailInput = document.getElementById("email").value;
+  let passwordInput = document.getElementById("password").value;
+
+  const validEmail = "d0logistics@d0.com.br";
+  const validPassword = "d0logistics";
+
+  if (emailInput === validEmail && passwordInput === validPassword) {
+    window.location.href = "dashboard.html";
+    loginForm.reset(); // Corrigindo o ID para resetar o formulário
+  } else {
+    // Exibir mensagem de erro
+    errorMessage.textContent = "Login ou senha incorretos. Tente novamente.";
+    errorMessage.style.display = "block";
+    loginForm.reset(); // Corrigindo o ID para resetar o formulário
+  }
+});
+
+document.getElementById("send-button").addEventListener("click", function(){
+  let chatWindow = window.open("chat.html", "Chat", "width=400, height=480");
+  
+})
+    </script>
+</body>
+</html>

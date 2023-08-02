@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #666;
+}
+
+.sub-menu {
+    margin-left: 20px;
+    list-style: none;
+    
+}
+
+.sub-menu li {
+    margin-bottom: 5px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#produtosChart{
+    width:"300"; 
+    height:"150";
+}
+/* Estilos gerais para o dashboard */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para as seções do dashboard */
+  .subsection {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para a tabela com aparência de grade */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  /* Estilo de destaque para a última entrada/saída */
+  .last-entry {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Estilos para os botões */
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-container button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo básico para a lista */
+ul.sub-menu {
+  list-style: none; /* Remover os marcadores padrão da lista */
+  padding: 0; /* Remover espaçamento interno da lista */
+  margin: 0; /* Remover espaçamento externo da lista */
+}
+
+/* Estilo dos itens da lista */
+ul.sub-menu li {
+  padding: 5px 10px; /* Espaçamento interno para os itens */
+  background-color: #f1f1f1; /* Cor de fundo dos itens */
+  border-bottom: 1px solid #ccc; /* Borda na parte inferior de cada item */
+}
+
+/* Estilo dos links dentro dos itens da lista */
+ul.sub-menu li a {
+  text-decoration: none; /* Remover decoração do link (sublinhado) */
+  color: #333; /* Cor do texto do link */
+  display: block; /* Fazer o link ocupar toda a largura do item */
+}
+
+/* Estilo quando o cursor está sobre o link */
+ul.sub-menu li a:hover {
+  background-color: #ddd; /* Mudar a cor de fundo ao passar o cursor */
+}
+
+  
